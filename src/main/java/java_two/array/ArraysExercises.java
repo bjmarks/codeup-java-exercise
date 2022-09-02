@@ -9,9 +9,9 @@ public class ArraysExercises {
         System.out.println(Arrays.toString(numbers));
         Person[] waifus = {new Person("Genos"), new Person("jabami"), new Person("goku")};
         //        Person [] waifus = new Person[3];
-//        waifus[0] = new Person("Alysha");
-//        waifus[1] = new Person("Benjamin");
-//        waifus[2] = new Person("Carlos");
+        //        waifus[0] = new Person("Alysha");
+        //        waifus[1] = new Person("Benjamin");
+        //        waifus[2] = new Person("Carlos");
         System.out.println(Arrays.toString(waifus));
 
         for (Person waifu : waifus){

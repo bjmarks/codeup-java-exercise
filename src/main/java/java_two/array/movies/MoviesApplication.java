@@ -1,6 +1,6 @@
 package java_two.array.movies;
 
-import java_two.util.Input;
+import util.Input;
 
 public class MoviesApplication {
     public static final int INVALID_CHOICE = -1;

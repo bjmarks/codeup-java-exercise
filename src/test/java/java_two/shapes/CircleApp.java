@@ -1,6 +1,7 @@
 package java_two.shapes;
 
-import java_two.util.Input;
+import java_two.shapes.Circle;
+import util.Input;
 
 public class CircleApp {
     public static void main(String[] args) {

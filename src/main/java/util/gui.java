@@ -1,4 +1,4 @@
-package java_two.util;
+package util;
 
 import javax.swing.*;
 

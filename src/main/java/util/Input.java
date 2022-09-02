@@ -1,4 +1,4 @@
-package java_two.util;
+package util;
 
 import java.util.Scanner;
 
@@ -48,7 +48,7 @@ public class Input {
         }
         return userInt;
     }
-    public static String getIntAsString(int num){
+    public String getIntAsString(int num){
         return String.valueOf(Integer.valueOf(num));
     }
     public double getDouble(double min, double max) {
@@ -59,6 +59,7 @@ public class Input {
         }
         return userDouble;
     }
+
     public double getDouble() {
         String userInput = getString();
         try {
@@ -72,7 +73,23 @@ public class Input {
         System.out.println(Question);
         return getDouble();
     }
-    public static String getDoubleAsString(double num){
+    public String getDoubleAsString(double num){
         return String.valueOf(Double.valueOf(num));
     }
+    public String useDelimiter(String que, String limit ) {
+        System.out.println(que);
+        String returner = String.valueOf(scanner.useDelimiter(limit));
+        return returner;
+    }
 }
+
+/*
+Note these methods will throw a NumberFormatException if the given input cannot be parsed as an int or double.
+Your methods on the Input class should handle these exceptions, you can use a try-catch for this.
+Use this functionality to create two new methods,
+getBinary and getHex that will accept a string that is a number in binary or hexadecimal.
+Enter a binary number: 111
+Your number is 7
+Enter a hexidecimal number: 10
+Your number is 16
+ */

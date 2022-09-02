@@ -1,4 +1,4 @@
-package java_two.grocery;
+package java_two.collections.grocery;
 
 public class GroceryItem implements Comparable {
     private String name;
@@ -12,42 +12,28 @@ public class GroceryItem implements Comparable {
     }
 
     @Override
-    public String toString() {
-        return "GroceryItem{" +
-                "name='" + name + '\'' +
-                ", categoryNum=" + categoryNum +
-                ", quantity=" + quantity +
-                '}';
-    }
-
+    public String toString() {return name + ", category" + categoryNum + ", quantity=" + quantity;}
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public int getCategoryNum() {
         return categoryNum;
     }
-
     public void setCategoryNum(int categoryNum) {
         this.categoryNum = categoryNum;
     }
-
     public int getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
     @Override
     public int compareTo(Object o) {
         GroceryItem otherItem = (GroceryItem) o;
         return this.getName().compareTo(otherItem.getName());
-//        return 0;
     }
 }

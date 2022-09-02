@@ -1,5 +1,5 @@
 package java_two.shapes;
-//public class Rectangle {
+// public class Rectangle {
 //    protected int length;
 //    protected int width;
 //    public Rectangle(int length, int width) {
